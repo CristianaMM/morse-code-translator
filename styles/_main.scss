@@ -1,0 +1,87 @@
+.translate {
+  height: 70vh;
+  background-image: url("../assets/woodBackground.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  @media screen and (min-width: $medium) {
+    height: 100vh;
+  }
+
+  &__input {
+    width: 325px;
+    height: 200px;
+    padding: 20px;
+    background: #ebdada;
+    box-shadow: inset 2px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    word-wrap: break-word;
+
+    @media screen and (min-width: $small) {
+      width: 500px;
+      height: 200px;
+    }
+
+    @media screen and (min-width: $medium) {
+      width: 760px;
+      height: 350px;
+      padding: 50px;
+    }
+  }
+  &__choice {
+    width: 100vw;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    @media screen and (min-width: $medium) {
+      flex-direction: row;
+    }
+    &__button {
+      width: 150px;
+      height: 40px;
+      background: #342b25;
+      box-shadow: inset 4px -2px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        box-shadow: inset 0px 2px 8px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+      }
+
+      @media screen and (min-width: $medium) {
+        width: 200px;
+        height: 50px;
+      }
+    }
+  }
+}
+
+.footer {
+  height: 30vh;
+  width: 100vw;
+  background-image: url("../assets/telegraphBoy.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(35, 15, 8, 0.46);
+  }
+
+  @media screen and (min-width: $small) {
+    height: 50vh;
+  }
+
+  @media screen and (min-width: $medium) {
+    background-position-y: -200px;
+  }
+}

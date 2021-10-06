@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap");
+
+$main-font: "Oxygen Mono", monospace;
+
+$font-color: #f5f5f5;
+$input-color: #ebdada;
+$button-color: #342b25;
+
+$small: 576px;
+$medium: 768px;
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: $main-font;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  color: $font-color;
+  margin: 20px;
+
+  @media screen and (min-width: $medium) {
+    font-size: 50px;
+  }
+}
+
+p {
+  font-size: 12px;
+  text-align: center;
+  color: $font-color;
+
+  @media screen and (min-width: $medium) {
+    font-size: 20px;
+  }
+}
