@@ -2,15 +2,7 @@ const input = document.querySelector("#input-box");
 const toMorseBtn = document.querySelector("#morse-button");
 const toEnglishBtn = document.querySelector("#english-button");
 
-toMorseBtn.addEventListener("click", () => {
-  translate(true);
-});
-
-toEnglishBtn.addEventListener("click", () => {
-  translate();
-});
-
-function translate(toMorse = false) {
+const translate = (toMorse) => {
   const text = input.value;
   let result = "";
 
@@ -29,4 +21,12 @@ function translate(toMorse = false) {
   }
 
   input.value = result;
-}
+};
+
+toMorseBtn.addEventListener("click", () => {
+  translate(true);
+});
+
+toEnglishBtn.addEventListener("click", () => {
+  translate(false);
+});
